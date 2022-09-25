@@ -2,7 +2,7 @@
   <header>
     <nav>
       <h1>
-        <router-link to="/">Find a Coach</router-link>
+        <router-link to="/">Find a Coachhhh</router-link>
       </h1>
       <ul>
         <li>
@@ -27,15 +27,15 @@ export default {
   computed: {
     isLoggedIn() {
       return this.$store.getters.isAuthenticated;
-    }
+    },
   },
   methods: {
     logout() {
-      this.$store.dispatch('logout');
-      this.$router.replace('/coaches');
-    }
-  }
-}
+      this.$store.dispatch("logout");
+      this.$router.replace("/coaches");
+    },
+  },
+};
 </script>
 
 <style scoped>
