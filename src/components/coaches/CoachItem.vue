@@ -14,18 +14,16 @@
 
 <script>
 export default {
-  props: ["id", "firstName", "lastName", "rate", "areas"],
+  props: ['id', 'firstName', 'lastName', 'rate', 'areas'],
   computed: {
     fullName() {
-      return this.firstName + " " + this.lastName;
+      return this.firstName + ' ' + this.lastName;
     },
     coachContactLink() {
-      //return "/coaches/" + this.id + "/contact";
-      return this.$route.path + "/" + this.id + "/contact";
+      return this.$route.path + '/' + this.id + '/contact'; // /coaches/c1/contact
     },
     coachDetailsLink() {
-      //return "/coaches/" + this.id;
-      return this.$route.path + "/" + this.id;
+      return this.$route.path + '/' + this.id; // /coaches/c1
     },
   },
 };
